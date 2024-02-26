@@ -1,5 +1,5 @@
 import 'package:get_it/get_it.dart';
-import 'package:meet_app/feture/login/data/repository/auth_repository.dart';
+import 'package:meet_app/feture/auth/data/repository/auth_repository.dart';
 
 final getIt = GetIt.instance;
 

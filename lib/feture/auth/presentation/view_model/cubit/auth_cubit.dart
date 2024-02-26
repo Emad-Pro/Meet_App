@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
-import 'package:meet_app/feture/login/data/repository/auth_repository.dart';
-import 'package:meet_app/feture/login/presentation/view_model/cubit/auth_state.dart';
+import 'package:meet_app/feture/auth/data/repository/auth_repository.dart';
+import 'package:meet_app/feture/auth/presentation/view_model/cubit/auth_state.dart';
 
 class AuthCubit extends Cubit<AuthState> {
   AuthCubit(this.authRepository) : super(AuthInitial());

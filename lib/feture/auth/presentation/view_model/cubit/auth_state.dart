@@ -1,4 +1,4 @@
-import 'package:meet_app/feture/login/data/model/loginAut.dart';
+import 'package:meet_app/feture/auth/data/model/AuthModel.dart';
 
 abstract class AuthState {}
 
@@ -7,7 +7,7 @@ class AuthInitial extends AuthState {}
 class AuthSignInWithGoogleLoadingState extends AuthState {}
 
 class AuthSignInWithGoogleLoadedState extends AuthState {
-  final LoginAuthModel loginAuthModel;
+  final AuthModel loginAuthModel;
 
   AuthSignInWithGoogleLoadedState(this.loginAuthModel);
 }
