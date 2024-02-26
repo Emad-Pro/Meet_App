@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "660378439665",
+    "project_id": "meet-ea",
+    "storage_bucket": "meet-ea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:660378439665:android:9ac74ed0bf4e4897b2fe50",
+        "android_client_info": {
+          "package_name": "com.example.meet_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "660378439665-ja9jevpg7uampaovnhu2s21ei3e78vqh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGDYqTDZ5zqPd53Q_dRyTuFmqH2ZVZRIY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "660378439665-ja9jevpg7uampaovnhu2s21ei3e78vqh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
