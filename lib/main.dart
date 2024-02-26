@@ -4,11 +4,12 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:meet_app/core/services/getIT.dart';
 import 'package:meet_app/feture/home/presentation/view/Home.dart';
 import 'package:meet_app/feture/auth/presentation/view/auth_screen.dart';
-import 'package:meet_app/core/colors.dart';
+
 import 'package:meet_app/feture/auth/presentation/view_model/cubit/auth_cubit.dart';
 import 'package:meet_app/feture/home/presentation/viewModel/cubit/home_cubit.dart';
-import 'package:meet_app/feture/meet/presentaition/view/MeetScreen.dart';
-import 'package:meet_app/feture/meet/presentaition/viewModel/cubit/meet_cubit.dart';
+
+import 'package:meet_app/feture/pagesView/presentaition/view/PagesView.dart';
+import 'package:meet_app/feture/pagesView/presentaition/viewModel/cubit/meet_cubit.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -33,7 +34,7 @@ class MyApp extends StatelessWidget {
           create: (context) => HomeCubit(),
         ),
         BlocProvider(
-          create: (context) => MeetCubit(),
+          create: (context) => PagesViewCubit(),
         ),
       ],
       child: MaterialApp(
@@ -42,10 +43,9 @@ class MyApp extends StatelessWidget {
         routes: {
           '/homeScreen': (context) => const HomeScreen(),
           '/authScreen': (context) => const AuthScreen(),
-          '/meetScreen': (context) => const MeetScreen(),
+          '/meetScreen': (context) => const PagesviewScreen(),
         },
-        theme:
-            ThemeData.dark().copyWith(scaffoldBackgroundColor: backgroundColor),
+        theme: ThemeData.dark(useMaterial3: true),
         home: const HomeScreen(),
       ),
     );

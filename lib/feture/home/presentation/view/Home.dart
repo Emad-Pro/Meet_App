@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:meet_app/feture/auth/presentation/view/auth_screen.dart';
 import 'package:meet_app/feture/home/presentation/viewModel/cubit/home_cubit.dart';
-import 'package:meet_app/feture/meet/presentaition/view/MeetScreen.dart';
+import 'package:meet_app/feture/pagesView/presentaition/view/PagesView.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -18,7 +18,7 @@ class HomeScreen extends StatelessWidget {
               child: CircularProgressIndicator(),
             );
           } else if (snapshot.hasData) {
-            return const MeetScreen();
+            return const PagesviewScreen();
           } else {
             return const AuthScreen();
           }
